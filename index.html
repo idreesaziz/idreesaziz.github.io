@@ -128,8 +128,8 @@
         <div class="hero-copy">
           <p class="eyebrow">Machine learning research</p>
           <h1 id="name">Idrees Mustafa Aziz</h1>
-          <p class="intro">I study how to evaluate model judgments, learn from simulated data, and make predictions with limited information.</p>
-          <p class="bio">I’m an independent researcher and a Computer Engineering undergraduate at Middle East Technical University (METU). My work ranges from testing how LLMs grade writing to training models on simulated markets. I’m particularly interested in reliable evaluation and its role in AI safety.</p>
+          <p class="intro">Research on LLM evaluation, learning from simulated data, and time-series prediction.</p>
+          <p class="bio">I’m an independent machine learning researcher and a Computer Engineering undergraduate at Middle East Technical University (METU). All research conducted independently, without an advisor. Independent research: Spring 2026 - Present.</p>
           <div class="profile-links" aria-label="Profile links">
             <a href="mailto:idrees.aziz@metu.edu.tr">Email</a>
             <a href="https://github.com/idreesaziz">GitHub</a>
@@ -150,11 +150,11 @@
           <div class="paper-side"><span class="year">2026</span><span class="area">LLM evaluation</span></div>
           <div>
             <h3><a href="no-one-gets-an-a.pdf">No One Gets an A: Distributional Bias in LLM Text Scoring</a></h3>
-            <p class="authors"><strong>Idrees Aziz</strong>, Mahir Sadikhov</p>
+            <p class="authors"><strong>Idrees Mustafa Aziz</strong> · First author</p>
             <p class="status">Research study · First author · 2026</p>
-            <p class="description">We tested whether <strong>11 LLMs</strong> could reliably grade writing across <strong>approximately 99,000 assessments</strong>. Models often gave similar scores to texts of different quality. Across nine models, a scoring correction improved how often better text ranked above worse text from <strong>51.8% to 64.9%</strong>.</p>
+            <p class="description">Designed a study of <strong>11 LLMs and ~99,000 text assessments</strong> to test whether 0-10 writing scores reflected deliberate reductions in text quality.</p>
+            <p class="description">Compared five scoring corrections. Probability-weighted scoring increased correct rankings of better versus degraded text <strong>from 51.8% to 64.9% across nine models</strong>.</p>
             <div class="paper-links"><a href="no-one-gets-an-a.pdf">Study manuscript</a><a href="https://github.com/idreesaziz/Distributional-Bias-in-LLM-Text-Scoring">Code</a></div>
-            <details><summary>Methods and my contribution</summary><p>I designed the experiments, changing grammar, sentence order, word choice, and information separately so their effects could be measured. We compared five score corrections and checked uncertainty with bootstrap confidence intervals and mixed-effects models. Improving the rankings did not necessarily make the models use more of the scoring scale.</p></details>
           </div>
         </article>
 
@@ -162,12 +162,14 @@
           <div class="paper-side"><span class="year">2026</span><span class="area">Learning from crowd beliefs</span></div>
           <div>
             <h3><a href="apd.pdf">Recovering Pre-Event Crowd Beliefs in Prediction Markets with a Risk-Calibrated Mixture of Inverse Experts</a></h3>
-            <p class="authors"><strong>Idrees Aziz</strong></p>
+            <p class="authors"><strong>Idrees Mustafa Aziz</strong> · Sole author</p>
             <p class="venue">7th ACM International Conference on AI in Finance (ICAIF 2026)</p>
-            <p class="status"><strong>Accepted · Selected for oral presentation</strong> · Proceedings forthcoming, November 2026</p>
-            <p class="description">Trading can influence the beliefs it is meant to reveal. I built <strong>APD-Safe</strong> to recover a crowd’s original probability estimate from trading records, using boosted trees to combine several models of trading behaviour. Across <strong>98 real markets</strong>, it recovered those beliefs with <strong>10.2% less error</strong> than averaging the prices after each trader’s first trade.</p>
+            <p class="status"><strong>Accepted after peer review; selected for oral presentation</strong> · Not yet published; forthcoming in ICAIF 2026 proceedings</p>
+            <p class="description">Built a method to estimate <strong>what a crowd believed before an event</strong>, separating that belief from distortions caused by trading behaviour. Combined models of trader behaviour according to their estimated errors.</p>
+            <p class="description">Reduced worst-case regret across unseen market mechanisms by <strong>about 80% (from 8.8% to 1.8%)</strong> relative to direct black-box prediction.</p>
+            <p class="description">On <strong>1,500 simulated markets from ten types absent from training</strong>, recovered beliefs with <strong>12.8% less error</strong> than averaging prices after each trader's first trade.</p>
+            <p class="description">Across <strong>98 real markets</strong>, recovered beliefs with <strong>10.2% less error (RMSE)</strong> than averaging the prices after each trader's first trade. Tested against pre-trading surveys from projects excluded from training.</p>
             <div class="paper-links"><a href="apd.pdf">Paper PDF</a><a href="https://doi.org/10.5281/zenodo.23377346">Preprint DOI</a></div>
-            <details><summary>How I tested it</summary><p>I compared the recovered beliefs against surveys taken before trading, keeping each research project out of training in turn. The model also reduced reconstruction error by 12.8% across 1,500 simulated markets from ten types of trading behaviour absent from training.</p></details>
           </div>
         </article>
 
@@ -175,12 +177,12 @@
           <div class="paper-side"><span class="year">2026</span><span class="area">Benchmark design</span></div>
           <div>
             <h3><a href="finentropybench.pdf">FinEntropyBench: What Does Entropy Tell Us About Market Efficiency?</a></h3>
-            <p class="authors"><strong>Idrees Aziz</strong></p>
+            <p class="authors"><strong>Idrees Mustafa Aziz</strong> · Sole author</p>
             <p class="venue">7th ACM International Conference on AI in Finance (ICAIF 2026)</p>
-            <p class="status"><strong>Accepted · Selected for oral presentation</strong> · Proceedings forthcoming, November 2026</p>
-            <p class="description">Does lower measured randomness mean a market is easier to predict? I built a benchmark comparing entropy measures, an LSTM, and linear and tree-based forecasters across <strong>16 market series</strong>. In <strong>113 tests across markets and years</strong>, measured patterns did not reliably translate into better direction forecasts or trading profits.</p>
+            <p class="status"><strong>Accepted after peer review; selected for oral presentation</strong> · Not yet published; forthcoming in ICAIF 2026 proceedings</p>
+            <p class="description">Built a benchmark to test <strong>whether randomness in price changes helps predict future returns</strong>. Compared neural-network, linear and tree-based models across <strong>16 market series</strong>.</p>
+            <p class="description">Ran <strong>113 tests</strong> across individual markets and years, selecting models on earlier data and measuring their forecasts and trading returns in the following year.</p>
             <div class="paper-links"><a href="finentropybench.pdf">Paper PDF</a><a href="https://doi.org/10.5281/zenodo.23377381">Preprint DOI</a></div>
-            <details><summary>What the benchmark separates</summary><p>I used simulations with known answers to check whether the statistical measures captured what they claimed to measure. The experiments distinguish patterns in the size of price changes from information about whether prices will rise or fall. Models and strategies were selected on earlier data and evaluated on later periods.</p></details>
           </div>
         </article>
 
@@ -188,12 +190,27 @@
           <div class="paper-side"><span class="year">2026</span><span class="area">Synthetic data &amp; transfer learning</span></div>
           <div>
             <h3><a href="market-decompression.pdf">Market Decompression: Learning Latent-State Inverse Maps for Cold-Start Financial Prediction</a></h3>
-            <p class="authors"><strong>Idrees Aziz</strong></p>
+            <p class="authors"><strong>Idrees Mustafa Aziz</strong> · Sole author</p>
             <p class="venue">7th ACM International Conference on AI in Finance (ICAIF 2026)</p>
-            <p class="status"><strong>Accepted after peer review</strong> · Not included in the proceedings</p>
-            <p class="description">I trained a <strong>Transformer on simulated markets</strong>, where hidden volatility and jump events could be used as labels, then adapted it with only <strong>five real training examples</strong>. Volatility forecast error fell by <strong>4.7% to 7.0% in three of five markets</strong> compared with the same model trained without those extra labels.</p>
+            <p class="status"><strong>Accepted after peer review</strong> · Not yet published; forthcoming in ICAIF 2026 proceedings</p>
+            <p class="description">Trained a <strong>Transformer on simulated markets</strong> to learn patterns hidden behind observed prices, then adapted it to forecast price variability with <strong>five real training examples</strong>.</p>
+            <p class="description">Used a <strong>Gaussian-process model</strong> to choose simulations likely to improve real forecasts. Compared identical models trained with and without those extra labels.</p>
+            <p class="description">Against this control, reduced <strong>volatility forecast error (MSE) by 4.7% to 7.0% in three of five markets</strong>.</p>
             <div class="paper-links"><a href="market-decompression.pdf">Paper PDF</a><a href="https://doi.org/10.5281/zenodo.23377391">Preprint DOI</a><a href="https://github.com/idreesaziz/market-decompression">Earlier code</a></div>
-            <details><summary>Transfer and its limits</summary><p>A Gaussian-process model identified simulation settings likely to improve real forecasts. I separated that search from confirmation and later test data. Gains did not hold up in the other two markets. The linked code repository documents an earlier cryptocurrency-only version; the PDF above contains the current five-market study.</p></details>
+          </div>
+        </article>
+
+
+        <article class="paper" id="gaussian-recency">
+          <div class="paper-side"><span class="year">2026</span><span class="area">Policy-rate forecasting</span></div>
+          <div>
+            <h3><a href="https://sciforum.net/paper/35946">A Gaussian Recency Score for Detecting and Directing Central-Bank Policy-Rate Changes</a></h3>
+            <p class="authors"><strong>Idrees Mustafa Aziz</strong> · Sole author</p>
+            <p class="venue">2nd International Online Conference on Risk and Financial Management (IOCRF 2026)</p>
+            <p class="status"><strong>Accepted; selected for oral presentation</strong> · November 2026</p>
+            <p class="description">Developed models that <strong>weight recent rate changes more heavily</strong> to predict whether central banks will cut, hold or raise rates, using past policy decisions alone.</p>
+            <p class="description">Evaluated an exploratory pipeline on <strong>2,490 post-hold forecasts across 37 economies</strong>, achieving <strong>0.614 macro-F1</strong> for cut/hold/hike prediction.</p>
+            <div class="paper-links"><a href="https://sciforum.net/paper/35946">Paper</a></div>
           </div>
         </article>
 
@@ -201,9 +218,10 @@
           <div class="paper-side"><span class="year">2026</span><span class="area">Research data &amp; structured NLP</span></div>
           <div>
             <h3><a href="https://doi.org/10.5281/zenodo.20669457">Central-bank communication graphs</a></h3>
-            <p class="authors"><strong>Idrees Aziz</strong></p>
+            <p class="authors"><strong>Idrees Mustafa Aziz</strong> · Sole author</p>
             <p class="status">Dataset manuscript under review at <em>Scientific Data</em></p>
-            <p class="description">A public research dataset built from <strong>2,872 Bank of England and Federal Reserve documents</strong>. It turns policy text into graphs of linked information, numerical text representations, and tables for ML experiments. Consistency checks and links back to the source documents support verification and reuse.</p>
+            <p class="description">Built a public <strong>ML dataset from 2,872 Bank of England and Federal Reserve documents</strong>, with graphs of linked information and numerical text representations.</p>
+            <p class="description">Checked records for consistency and linked them to source documents so others could verify the data.</p>
             <div class="paper-links"><a href="https://doi.org/10.5281/zenodo.20669457">Dataset &amp; code</a></div>
           </div>
         </article>
@@ -213,7 +231,9 @@
         <h2 id="background-heading">Background</h2>
         <div>
           <p>I’m completing a B.E. in Computer Engineering at <a href="https://www.metu.edu.tr/">Middle East Technical University</a>, with graduation expected in 2027. My coursework includes machine learning, statistics, scientific computing, and a graduate-level Probability Theory course currently in progress.</p>
-          <p>Most of my research has been independent: choosing the question, designing the experiments, building the models, and writing up the results. I work primarily in Python and PyTorch.</p>
+          <p>All research conducted independently, without an advisor.</p>
+          <p><strong>Coursework:</strong> Graduate-level Probability Theory (in progress); Machine Learning; Statistics for Computer Engineers; Linear Algebra; Calculus I-III; Scientific Computing; C Programming; Data Structures; Algorithms.</p>
+          <p><strong>Programming:</strong> Python, C++, SQL, TypeScript.<br><strong>ML and analysis:</strong> PyTorch, NumPy, pandas, SciPy, scikit-learn; model training, simulation, controlled comparisons, and statistical evaluation.<br><strong>Tools:</strong> Git, Linux, LaTeX.</p>
           <a href="Idrees_Aziz_CV.pdf">Full research CV ↗</a>
         </div>
       </section>
@@ -226,3 +246,6 @@
   </div>
 </body>
 </html>
+
+
+<!-- cv-alignment-20261030-v11 -->

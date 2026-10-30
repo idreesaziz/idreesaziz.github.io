@@ -2,15 +2,17 @@
 
 Personal website: https://idreesaziz.github.io/
 
-A small, responsive academic homepage hosted on GitHub Pages. No build step or package installation is required.
+A responsive research homepage hosted on GitHub Pages, with no build step.
+
+The current CV is the source of truth for the biography, research descriptions, results, authorship and publication statuses. All research was conducted independently, without an advisor.
 
 ## Update the site
 
-- Edit `index.html` for the biography, paper descriptions, links, or appearance.
-- Replace `Idrees_Aziz_CV.pdf` to update the downloadable CV.
-- The four research manuscript PDFs are stored alongside `index.html`.
-- Commit changes to `main`. GitHub Pages publishes from the repository root.
+- Edit `index.html` for the biography, research entries, links or appearance.
+- Replace `Idrees_Aziz_CV.pdf` with the current authoritative CV.
+- Keep the website and downloadable CV consistent.
+- Commit changes to `main`; GitHub Pages publishes from the repository root.
 
-Paper descriptions distinguish manuscripts, accepted papers, forthcoming proceedings, and the accepted Market Decompression paper that is not included in the proceedings. The linked Market Decompression code documents an earlier version of that project.
+The three ICAIF 2026 papers are accepted after peer review and forthcoming in the conference proceedings; APD and FinEntropyBench were selected for oral presentation. The Gaussian recency paper is accepted for oral presentation at IOCRF 2026. The communication-graphs manuscript is under review at Scientific Data. No One Gets an A is a first-author research study.
 
-The profile photo uses the account’s public GitHub avatar. The site does not use analytics or third-party scripts.
+Paper PDFs and preprint links are distinguished from forthcoming proceedings publications. The website uses the account's public GitHub avatar and has no analytics or third-party scripts.
